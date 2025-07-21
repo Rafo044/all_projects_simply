@@ -4,7 +4,7 @@ import geopandas as gpd
 from IPython import display
 import numpy as np
 
-shapefile_path = '/var/home/rafo/vscode02/My_project/World_Countries_Generalized/World_Countries_Generalized.shp'
+shapefile_path = '/data/World_Countries_Generalized.shp'
 world = gpd.read_file(shapefile_path)
 # create random color
 def random_color():
@@ -15,7 +15,7 @@ def update(frame):
     world['color'] = [random_color() for _ in range(len(world))]
     ax.clear()
     world.plot(ax=ax, color=world['color'])
-    ax.set_title('Dünya Haritası - Çerçeve {}'.format(frame))
+    ax.set_title('Dunya Xeritesi  {}'.format(frame))
 
 # empty map
 fig, ax = plt.subplots(figsize=(10, 6))

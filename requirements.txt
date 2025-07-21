@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+plotly
+geopandas
+scipy
+openpyxl
+shapely
+fiona
+sqlite3  
+
